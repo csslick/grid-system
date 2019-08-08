@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>grid-system</title>
-  <link rel="stylesheet" href="grid.css">
+  <title>반응형웹-그리드시스템</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    .row{ border: 2px solid #ccc;}
-    [class^='col']{
-      border: 2px solid red;
-      padding: 20px;
+    .row {
+      border: 1px solid #999;
+    }
+
+    [class^='col'] {
+      border: 1px solid red;
     }
   </style>
 </head>
+
 <body>
-  <section class="container">
-    <div class="row">
-      <div class="col-6">col</div>
-      <div class="col-6">col</div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 heading">
+          <h1>CAFE</h1>
+        </div>
+        <nav class="col-6">
+          <a href="#">카페소개</a>
+          <a href="#">커피메뉴</a>
+          <a href="#">오시는길</a>
+        </nav>
+      </div><!-- end row-->
+    </div><!-- end container -->
+  </header>
+
+  <section id="visual" class="row">
+    <img 
+      class="img-responsive" 
+      src="http://placeimg.com/1200/600/1" alt="">
+  </section>
+
+  <!-- 카페소개 -->
+  <section id="about">
+    <div class="container">
+        <h2>카페소개</h2>
+      <div class="row">
+        <div class="col-6">
+          <img
+            class="img-responsive"  
+            src="http://placeimg.com/600/400/11" alt="cafe">
+        </div>
+        <div class="col-6">
+          <ul class="info">
+            <li>영업시간: 오전 9시 ~ 오후 10시</li>
+            <li>휴무: 매주 수요일(<i><small>수요일이 공휴일일 경우 다음주</small></i>)</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="row">
-    <div class="col-4">col</div>
-    <div class="col-4">col</div>
-    <div class="col-4">col</div>
-  </section>
-  <section class="row">
-    <div class="col-3">col</div>
-    <div class="col-3">col</div>
-    <div class="col-3">col</div>
-    <div class="col-3">col</div>
-  </section>
-  <section class="row">
-    <div class="col-12">col-12</div>
-  </section>
-  <section class="row">
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-    <div class="col-1">col-1</div>
-  </section>
+
+
 </body>
+
 </html>

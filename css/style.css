@@ -1,0 +1,47 @@
+ul{
+  list-style-type: none;
+}
+a{text-decoration: none;}
+body{
+  font-family: "맑은 고딕",sans-serif;
+  font-size: 100%;
+  color: #666;
+}
+.img-responsive{
+  width: 100%;
+  vertical-align: middle;
+}
+
+header{
+  background: #000;
+  color: #fff;
+}
+header .heading{ text-align: center;}
+header nav{ 
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/* 테블릿 이상~ */
+@media (min-width: 768px){
+  header .heading{ text-align: left;}
+  header nav{ 
+    text-align: right;
+    padding-top: 0.8em;
+  }
+}
+
+header nav a{ 
+  color: #fff;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* about */
+#about, #locaion{ padding: 40px 0;}
+#about .col-6, #location .col-6{
+  padding: 20px;
+}
+
+/* location */
+#location{}
